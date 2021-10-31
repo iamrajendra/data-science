@@ -5,4 +5,9 @@
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-print("Hello world")
+patient_name  = "john smith"
+patient_age  = 20
+patient_is_new  = True
+print(patient_name)
+print(patient_age)
+print(patient_is_new)
