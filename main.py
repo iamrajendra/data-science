@@ -1,7 +1,14 @@
 
-numbers  = [2,2,4,6,3,4,6,1]
-uniques  = []
-for number in numbers:
-    if number not in uniques:
-        uniques.append(number)
-print (uniques)
+
+phone = str(input("Phone: "))
+digits_mapping = {
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four"
+}
+output  = ""
+for ch in phone:
+    output+=digits_mapping.get(ch,"!") +" "
+
+print (output)
