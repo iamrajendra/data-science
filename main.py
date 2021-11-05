@@ -4,13 +4,15 @@
 from random import Random
 
 
-class Dice :
-    def role(self):
-            ran = Random()
-            first = ran.randint(1,6)
-            second = ran.randint(1,6)
-            return first,second
+class Coin:
+    def flip(self):
+        random  = Random()
+        face  = {
+            1:"Head",
+            2:"Tail"
+        }
+        num = random.randint(1,2)
+        return  face.get(num)
 
-dice  = Dice()
-
-print ("Dice > "+str(dice.role()))
+coin  = Coin()
+print (coin.flip())
