@@ -1,9 +1,29 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# Function to take multiple arguments
+def add(datatype, *args):
+    # if datatype is int
+    # initialize answer as 0
+    if datatype == 'int':
+        answer = 0
+
+    # if datatype is str
+    # initialize answer as ''
+    if datatype == 'str':
+        answer = ''
+
+    # Traverse through the arguments
+    for x in args:
+        # This will do addition if the
+        # arguments are int. Or concatenation
+        # if the arguments are str
+        answer = answer + x
+
+    print(answer)
 
 
-import converters
-from converters import  lbs_to_kg
+# Integer
+add('int', 5, 6)
 
-print (converters.kg_to_lbs(3))
-print (lbs_to_kg(6))
+# String
+add('str', 'Hi ', 'Geeks')
