@@ -1,29 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Function to take multiple arguments
-def add(datatype, *args):
-    # if datatype is int
-    # initialize answer as 0
-    if datatype == 'int':
-        answer = 0
-
-    # if datatype is str
-    # initialize answer as ''
-    if datatype == 'str':
-        answer = ''
-
-    # Traverse through the arguments
-    for x in args:
-        # This will do addition if the
-        # arguments are int. Or concatenation
-        # if the arguments are str
-        answer = answer + x
-
-    print(answer)
+from random import Random
 
 
-# Integer
-add('int', 5, 6)
+class Dice :
+    def role(self):
+            ran = Random()
+            first = ran.randint(1,6)
+            second = ran.randint(1,6)
+            return first,second
 
-# String
-add('str', 'Hi ', 'Geeks')
+dice  = Dice()
+
+print ("Dice > "+str(dice.role()))
