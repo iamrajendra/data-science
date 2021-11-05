@@ -1,14 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
+words = raw_input(">: ")
+words_list = words.split(" ")
+emoji_dict = {
+    ":)": "😃",
+    ":(": "☹️",
 
-phone = str(input("Phone: "))
-digits_mapping = {
-    "1": "one",
-    "2": "two",
-    "3": "three",
-    "4": "four"
 }
-output  = ""
-for ch in phone:
-    output+=digits_mapping.get(ch,"!") +" "
-
-print (output)
+output_str = "";
+for word  in words_list:
+    output_str += emoji_dict.get(word,word)+" "
+print (output_str)
