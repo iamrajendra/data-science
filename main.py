@@ -1,8 +1,14 @@
-# coding=utf-8
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 
-print("Hello world")
+class Person :
+    def __init__(self,name):
+       self. name  = name
+
+    def talk(self):
+
+       print ("Rajendra talks to "+self.name);
+
+rajendra  = Person("Kavita")
+rajendra.talk()
