@@ -2,13 +2,23 @@
 # -*- coding: utf-8 -*-
 
 
-class Person :
-    def __init__(self,name):
-       self. name  = name
 
+
+class Mammal:
+    def __init__(self):
+        pass
     def talk(self):
+      print ("talk")
 
-       print ("Rajendra talks to "+self.name);
 
-rajendra  = Person("Kavita")
-rajendra.talk()
+class Cat(Mammal):
+    def __init__(self):
+        pass
+
+
+class Dog(Mammal):
+    def __init__(self):
+        pass
+
+dog  = Dog()
+dog.talk()
