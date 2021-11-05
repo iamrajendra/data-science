@@ -2,23 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
+import converters
 
-
-class Mammal:
-    def __init__(self):
-        pass
-    def talk(self):
-      print ("talk")
-
-
-class Cat(Mammal):
-    def __init__(self):
-        pass
-
-
-class Dog(Mammal):
-    def __init__(self):
-        pass
-
-dog  = Dog()
-dog.talk()
+print (converters.kg_to_lbs(3))
+print (converters.lbs_to_kg(6))
